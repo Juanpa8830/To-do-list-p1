@@ -2,7 +2,7 @@
   "name": "to-do-list-p1",
   "version": "1.0.0",
   "description": "<a name=\"readme-top\"></a>",
-  "main": "index.js",
+  "private": true,
   "scripts": {
     "build": "webpack",
     "start": "webpack serve --open",

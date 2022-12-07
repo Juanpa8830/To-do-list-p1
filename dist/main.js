@@ -116,47 +116,7 @@ eval("\n\n/* istanbul ignore next  */\nfunction styleTagTransform(css, styleElem
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _styles_main_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./styles/main.scss */ \"./src/styles/main.scss\");\n/* harmony import */ var _assets_deletebin_svg__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./assets/deletebin.svg */ \"./src/assets/deletebin.svg\");\n/* harmony import */ var _assets_align_left_svg__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./assets/align-left.svg */ \"./src/assets/align-left.svg\");\n/* harmony import */ var _assets_editpen_svg__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./assets/editpen.svg */ \"./src/assets/editpen.svg\");\n/* harmony import */ var _assets_ellipsis_v_svg__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./assets/ellipsis-v.svg */ \"./src/assets/ellipsis-v.svg\");\n\n\n\n\n\n\n\nconst userInput = document.querySelector('.task-input input');\nlet tasks = JSON.parse(localStorage.getItem('Tasks'));\nconst tasksList = document.getElementById('task-box');\n\nfunction showTasks() {\n  let li = '';\n  if (tasks) {\n    tasks.forEach((task, id) => {\n      li += `<li class=\"task\">\n        <label for=\"${id}\">\n            <input id=\"checkbox\" value=\"true\" type=\"checkbox\">\n            <p>${task.description}</p>\n        </label>\n        <div class=\"settings\">\n            <img class=\"dots\" src=\"./images/ellipsis-v.svg\" alt=\"icon\">\n            <ul class=\"task-menu\">\n                <li><img class=\"dots\" src=\"./images/editpen.svg\" alt=\"edit\"></li>\n                <li><img class=\"dots\" src=\"./images/deletebin.svg\" alt=\"edit\"></li>\n            </ul>\n        </div>\n     </li>`;\n    });\n  }\n  tasksList.innerHTML = li;\n}\nshowTasks();\n\nuserInput.addEventListener('keyup', (e) => {\n  const userTask = userInput.value.trim();\n  if (e.key === 'Enter' && userTask) {\n    if (!tasks) {\n      tasks = [];\n    }\n    userInput.value = '';\n    const taskInfo = { description: userTask, status: 'pending' };\n    tasks.push(taskInfo);\n    localStorage.setItem('Tasks', JSON.stringify(tasks));\n    showTasks();\n  }\n});\n\n\n//# sourceURL=webpack://to-do-list-p1/./src/index.js?");
-
-/***/ }),
-
-/***/ "./src/assets/align-left.svg":
-/*!***********************************!*\
-  !*** ./src/assets/align-left.svg ***!
-  \***********************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-eval("module.exports = __webpack_require__.p + \"align-left .svg\";\n\n//# sourceURL=webpack://to-do-list-p1/./src/assets/align-left.svg?");
-
-/***/ }),
-
-/***/ "./src/assets/deletebin.svg":
-/*!**********************************!*\
-  !*** ./src/assets/deletebin.svg ***!
-  \**********************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-eval("module.exports = __webpack_require__.p + \"deletebin .svg\";\n\n//# sourceURL=webpack://to-do-list-p1/./src/assets/deletebin.svg?");
-
-/***/ }),
-
-/***/ "./src/assets/editpen.svg":
-/*!********************************!*\
-  !*** ./src/assets/editpen.svg ***!
-  \********************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-eval("module.exports = __webpack_require__.p + \"editpen .svg\";\n\n//# sourceURL=webpack://to-do-list-p1/./src/assets/editpen.svg?");
-
-/***/ }),
-
-/***/ "./src/assets/ellipsis-v.svg":
-/*!***********************************!*\
-  !*** ./src/assets/ellipsis-v.svg ***!
-  \***********************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-eval("module.exports = __webpack_require__.p + \"ellipsis-v .svg\";\n\n//# sourceURL=webpack://to-do-list-p1/./src/assets/ellipsis-v.svg?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _styles_main_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./styles/main.scss */ \"./src/styles/main.scss\");\n\n\n\nconst userInput = document.querySelector('.task-input input');\nlet tasks = JSON.parse(localStorage.getItem('Tasks'));\nconst tasksList = document.getElementById('task-box');\n\nfunction showTasks() {\n  let li = '';\n  if (tasks) {\n    tasks.forEach((task, id) => {\n      li += `<li class=\"task\">\n        <label for=\"${id}\">\n            <input id=\"checkbox\" value=\"true\" type=\"checkbox\">\n            <p>${task.description}</p>\n        </label>\n        <div class=\"settings\">\n            <img class=\"dots\" src=\"./dist/ellipsis-v.svg\" alt=\"icon\">\n            <ul class=\"task-menu\">\n                <li><img class=\"dots\" src=\"./dist/editpen.svg\" alt=\"edit\"></li>\n                <li><img class=\"dots\" src=\"./dist/deletebin.svg\" alt=\"edit\"></li>\n            </ul>\n        </div>\n     </li>`;\n    });\n  }\n  tasksList.innerHTML = li;\n}\nshowTasks();\n\nuserInput.addEventListener('keyup', (e) => {\n  const userTask = userInput.value.trim();\n  if (e.key === 'Enter' && userTask) {\n    if (!tasks) {\n      tasks = [];\n    }\n    userInput.value = '';\n    const taskInfo = { description: userTask, status: 'pending' };\n    tasks.push(taskInfo);\n    localStorage.setItem('Tasks', JSON.stringify(tasks));\n    showTasks();\n  }\n});\n\n\n//# sourceURL=webpack://to-do-list-p1/./src/index.js?");
 
 /***/ })
 
@@ -211,18 +171,6 @@ eval("module.exports = __webpack_require__.p + \"ellipsis-v .svg\";\n\n//# sourc
 /******/ 		};
 /******/ 	})();
 /******/ 	
-/******/ 	/* webpack/runtime/global */
-/******/ 	(() => {
-/******/ 		__webpack_require__.g = (function() {
-/******/ 			if (typeof globalThis === 'object') return globalThis;
-/******/ 			try {
-/******/ 				return this || new Function('return this')();
-/******/ 			} catch (e) {
-/******/ 				if (typeof window === 'object') return window;
-/******/ 			}
-/******/ 		})();
-/******/ 	})();
-/******/ 	
 /******/ 	/* webpack/runtime/hasOwnProperty shorthand */
 /******/ 	(() => {
 /******/ 		__webpack_require__.o = (obj, prop) => (Object.prototype.hasOwnProperty.call(obj, prop))
@@ -237,26 +185,6 @@ eval("module.exports = __webpack_require__.p + \"ellipsis-v .svg\";\n\n//# sourc
 /******/ 			}
 /******/ 			Object.defineProperty(exports, '__esModule', { value: true });
 /******/ 		};
-/******/ 	})();
-/******/ 	
-/******/ 	/* webpack/runtime/publicPath */
-/******/ 	(() => {
-/******/ 		var scriptUrl;
-/******/ 		if (__webpack_require__.g.importScripts) scriptUrl = __webpack_require__.g.location + "";
-/******/ 		var document = __webpack_require__.g.document;
-/******/ 		if (!scriptUrl && document) {
-/******/ 			if (document.currentScript)
-/******/ 				scriptUrl = document.currentScript.src
-/******/ 			if (!scriptUrl) {
-/******/ 				var scripts = document.getElementsByTagName("script");
-/******/ 				if(scripts.length) scriptUrl = scripts[scripts.length - 1].src
-/******/ 			}
-/******/ 		}
-/******/ 		// When supporting browsers where an automatic publicPath is not supported you must specify an output.publicPath manually via configuration
-/******/ 		// or pass an empty string ("") and set the __webpack_public_path__ variable from your code to use your own logic.
-/******/ 		if (!scriptUrl) throw new Error("Automatic publicPath is not supported in this browser");
-/******/ 		scriptUrl = scriptUrl.replace(/#.*$/, "").replace(/\?.*$/, "").replace(/\/[^\/]+$/, "/");
-/******/ 		__webpack_require__.p = scriptUrl;
 /******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/nonce */

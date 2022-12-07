@@ -1,9 +1,4 @@
-import './styles/main.scss'
-import icon1 from './assets/deletebin.svg'
-import icon2 from './assets/align-left.svg'
-import icon3 from './assets/editpen.svg'
-import icon4 from './assets/ellipsis-v.svg'
-
+import './styles/main.scss';
 
 const userInput = document.querySelector('.task-input input');
 let tasks = JSON.parse(localStorage.getItem('Tasks'));
@@ -19,10 +14,10 @@ function showTasks() {
             <p>${task.description}</p>
         </label>
         <div class="settings">
-            <img class="dots" src="./images/ellipsis-v.svg" alt="icon">
+            <img class="dots" src="./dist/ellipsis-v.svg" alt="icon">
             <ul class="task-menu">
-                <li><img class="dots" src="./images/editpen.svg" alt="edit"></li>
-                <li><img class="dots" src="./images/deletebin.svg" alt="edit"></li>
+                <li><img class="dots" src="./dist/editpen.svg" alt="edit"></li>
+                <li><img class="dots" src="./dist/deletebin.svg" alt="edit"></li>
             </ul>
         </div>
      </li>`;

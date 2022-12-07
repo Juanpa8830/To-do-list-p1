@@ -28,8 +28,6 @@ After you're finished please remove all the comments and instructions!
   <img src="./images/murple_logo.png" alt="logo" width="140"  height="auto" />
   <br/>
 
-  <h3><b>Microverse README Template</b></h3>
-
 </div>
 
 <!-- TABLE OF CONTENTS -->
@@ -123,6 +121,11 @@ To get a local copy up and running, follow these steps:
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- FUTURE FEATURES -->
+
+### Future Features <a name="Future-features"></a>
+
+- **[Add ranges of time for each activity]**
+
 
 <!-- CONTRIBUTING -->
 
